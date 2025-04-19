@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Lucho Technologies</title>
+    <script src="https://unpkg.com/@ruffle-rs/ruffle"></script>
+</head>
+
+<body>
+    <h1>Boxhead</h1>
+
+    <div id="flash-container"></div>
+
+    <script>
+        window.RufflePlayer = window.RufflePlayer || {};
+        window.addEventListener("load", () => {
+            const ruffle = window.RufflePlayer.newest();
+            const player = ruffle.createPlayer();
+            document.getElementById("flash-container").appendChild(player);
+            player.load("/flashcontent/boxhead.swf");
+        });
+    </script>
+
+    <a href="/games.html">Back</a>
+</body>
+
+</html>
