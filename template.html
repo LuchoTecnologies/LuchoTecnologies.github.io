@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='styles/page.css') }}">
+    <link rel="stylesheet" type="text/css" href="../static/styles/page.css"> <!-- This is for development -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="{{ url_for('static', filename='images/icon.png') }}">
+    <title>Lucho Tecnologies</title>
+</head>
+
+
+<body>
+    <header>
+        <nav class="topnav">
+            <h1 class="header-title">Lucho Tecnologies</h1>
+            <img src="{{url_for('static', filename='images/logotext.png')}}"
+            alt = "Lucho Tecnologies"
+            class="logo"
+            />
+        </nav>
+        
+        <!-- lol -->
+        <nav>
+            <ul>
+                <li>
+                    <a href="/">Inicio</a>
+                </li>
+                <li>
+                    <a href="pages/tools.html">Herramientas</a>
+                </li>
+                <li>
+                    <a href="pages/portfolio.html">Portfolio</a>
+                </li>
+                <li>
+                    <a href="pages/apis.html">APIs</a>
+                </li>
+                <li>
+                    <a href="pages/about.html">Acerca</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <article>
+        <p>Welcome to the test page</p>
+    
+        <a href = "pages/page2.html">Page 2</a>
+    </article>
+    
+
+</body>
+
+</html>
